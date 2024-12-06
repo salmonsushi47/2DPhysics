@@ -1,7 +1,10 @@
 # 2DPhysics
 ## Description
 A **Simple Physics Algorithm** that simulates elastic collisions between circular bodies and window walls.
+
 It has an unstuck function and uses a quadtree for collision optimization.
+
+
 thats about it nothing ground breaking.
 
 ## Controls
