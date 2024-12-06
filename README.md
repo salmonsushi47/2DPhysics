@@ -32,3 +32,4 @@ thats about it nothing ground breaking.
     Q                       : Toggle Quad Tree visibility
     Forward Slash Button    : Info
     Space Bar               : tells how much early or late for this frame in micro seconds
+    Esc                     : Exits Program
