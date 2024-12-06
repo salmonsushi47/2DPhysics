@@ -565,6 +565,7 @@ int main(void)
     Q                       : Toggle Quad Tree visibility
     Forward Slash Button    : Info
     Space Bar               : tells how much early or late for this frame in micro seconds
+    Esc                     : Exits Program
 
-    Last Edited on 31th Oct 2024
+    Last Edited on 6th Dec 2024
 */
