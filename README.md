@@ -4,7 +4,6 @@ A **Simple Physics Algorithm** that simulates elastic collisions between circula
 
 It has an unstuck function and uses a quadtree for collision optimization.
 
-
 thats about it nothing ground breaking.
 
 ## Controls
