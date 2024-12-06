@@ -368,8 +368,11 @@ int main(void)
                 break;
             }
         }
+        if (!mainWindow.hasFocus())
+            goto skip_to_end;
+
         // Take Input           note: All pointers to the particles vector array elements break here
-        if (sf::Mouse::isButtonPressed(sf::Mouse::Left) && mainWindow.hasFocus())
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             float randNum = randomNum();
             particles.push_back(particle(sf::Mouse::getPosition(mainWindow).x, sf::Mouse::getPosition(mainWindow).y, randomNum() * 10.0f + 5.0f, sf::Vector2f(std::cos(randomNum() * 𝜏) * randNum * 2, std::sin(randNum * 𝜏) * randomNum() * 2)));
@@ -406,7 +409,7 @@ int main(void)
                 particles.back().setColor(sf::Color(255, 255, 255, 255));
             }
         }
-        else if (sf::Mouse::isButtonPressed(sf::Mouse::Right) && mainWindow.hasFocus())
+        else if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
         {
             for (size_t i = 0; i < particles.size(); ++i)
             {
@@ -451,11 +454,11 @@ int main(void)
                 }
             }
         }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace) && particles.size() > 0 && mainWindow.hasFocus())
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace) && particles.size() > 0)
         {
             particles.erase(begin(particles));
         }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Slash) && mainWindow.hasFocus())
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Slash))
         {
             std::cout << "Total particles are " << particles.size() << "\n";
             double total_KE = 0;
@@ -465,7 +468,7 @@ int main(void)
             }
             std::cout << "Total Kinetic Energy of the system is " << total_KE << "\n";
         }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) && mainWindow.hasFocus())
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q))
         {
             if (quadTree_visibility)
                 quadTree_visibility = false;
@@ -476,7 +479,7 @@ int main(void)
                 /* wait */
             }
         }
-        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::X) && mainWindow.hasFocus())
+        else if (sf::Keyboard::isKeyPressed(sf::Keyboard::X))
         {
             particles.clear();
         }
@@ -524,10 +527,11 @@ int main(void)
         }
         mainWindow.display();
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && mainWindow.hasFocus())
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
         {
             std::clog << "ms:" << 1000000 / 60 - Timer.getElapsedTime().asMicroseconds() << std::endl;
         }
+    skip_to_end:
         while (Timer.getElapsedTime().asMicroseconds() < 1000000 / 60) // One Second = 10^6 Micro Seconds
         {
             /* Wait */
