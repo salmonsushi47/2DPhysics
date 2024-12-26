@@ -532,10 +532,12 @@ int main(void)
             std::clog << "ms:" << 1000000 / 60 - Timer.getElapsedTime().asMicroseconds() << std::endl;
         }
     skip_to_end:
+    /* Redundant with frame limit
         while (Timer.getElapsedTime().asMicroseconds() < 1000000 / 60) // One Second = 10^6 Micro Seconds
         {
             /* Wait */
         }
+    */
     }
     return 0;
 }
