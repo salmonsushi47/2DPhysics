@@ -6,6 +6,8 @@ It has an unstuck function and uses a quadtree for collision optimization.
 
 thats about it nothing ground breaking.
 
+note: This uses SFML 2.6.1 and will continue to do so since SFML 3.0.0 causes performance issues
+
 ## Controls
 
     Left Mouse Button       : Adds White particles
