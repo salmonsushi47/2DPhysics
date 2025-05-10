@@ -1,12 +1,12 @@
 # 2DPhysics
 ## Description
-A **Simple Physics Algorithm** written in **C++** using **SFML** that simulates elastic collisions between circular bodies and window walls.
+A **Simple Physics Algorithm** written in **C++** using **SFML3.0.1** that simulates elastic collisions between circular bodies and window walls.
 
 It has an unstuck function and uses a quadtree for collision optimization.
 
 thats about it nothing ground breaking.
 
-note: This uses SFML 2.6.1 and will continue to do so since SFML 3.0.0 causes performance issues
+note: SFML 3.0.0 causes performance issues
 
 ## Controls
 
