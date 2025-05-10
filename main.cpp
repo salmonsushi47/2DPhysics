@@ -557,7 +557,7 @@ int main(void)
     X                       : Deletes all particles
     Q                       : Toggle Quad Tree visibility
     Forward Slash Button    : Info
-    Space Bar               : Tells how much time dram took in seconds
+    Space Bar               : Tells how much time frame took in seconds
     Esc                     : Exits Program
 
     Last Edited on 10th May 2025
