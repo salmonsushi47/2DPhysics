@@ -33,5 +33,5 @@ note: This uses SFML 2.6.1 and will continue to do so since SFML 3.0.0 causes pe
     X                       : Deletes all particles
     Q                       : Toggle Quad Tree visibility
     Forward Slash Button    : Info
-    Space Bar               : tells how much early or late for this frame in micro seconds
+    Space Bar               : Tells how much time frame took in seconds
     Esc                     : Exits Program
