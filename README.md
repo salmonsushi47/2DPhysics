@@ -10,7 +10,6 @@ note: SFML 3.0.0 causes performance issues
 
 ## Controls
 
-    Controls:
     Left Mouse Button       : Adds White particles
     Left Mouse Button + P   : Adds Purple particles
     Left Mouse Button + V   : Adds Voilet particles
