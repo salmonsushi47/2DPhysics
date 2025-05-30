@@ -32,6 +32,6 @@ note: SFML 3.0.0 causes performance issues
     Back Space Button       : Deletes old particles
     X                       : Deletes all particles
     Q                       : Toggle Quad Tree visibility
-    Forward Slash Button    : Info
-    Space Bar               : Tells how much time frame took in seconds
+    K                       : Info
+    S                       : Tells how much time frame took in seconds
     Esc                     : Exits Program
