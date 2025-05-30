@@ -10,6 +10,7 @@ note: SFML 3.0.0 causes performance issues
 
 ## Controls
 
+    Controls:
     Left Mouse Button       : Adds White particles
     Left Mouse Button + P   : Adds Purple particles
     Left Mouse Button + V   : Adds Voilet particles
@@ -32,6 +33,6 @@ note: SFML 3.0.0 causes performance issues
     Back Space Button       : Deletes old particles
     X                       : Deletes all particles
     Q                       : Toggle Quad Tree visibility
-    Forward Slash Button    : Info
-    Space Bar               : Tells how much time frame took in seconds
+    K                       : Info
+    S                       : Tells how much time frame took in seconds
     Esc                     : Exits Program
